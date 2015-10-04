@@ -1,14 +1,38 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Mypage</title>
+  <title>Vitalijus Desukas</title>
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
+
+<!-- GOOGLE FONTS -->
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800|PT+Sans:400,700|Lato:400,700,900' rel='stylesheet' type='text/css'>
+<!-- -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
 </head>
-<body>
+	<body>
+		<header>
+			<!--<div id="nav-anchor"></div>-->
+			<nav>
+			  <div id="outer_circle">
+			    <div id="inner_circle">
 
-<%= yield %>
+			    </div>
+			  </div>
 
-</body>
+			  <ul>
+			    <li><a href="#home_page">Home</a></li>
+			    <li><a href="#about_page">About</a></li>
+			    <li><a href="#why_me_page">Why me?</a></li>
+			    <li><a href="#contact_page">Contact</a></li>
+			  </ul>
+			</nav>
+		</header>
+
+	<%= yield %>
+
+	</body>
 </html>

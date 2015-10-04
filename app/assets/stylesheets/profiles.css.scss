@@ -1,3 +1,348 @@
-// Place all the styles related to the profiles controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+/* HEADER NAVIGATION */
+
+nav {
+	width: 100%;
+	height: 60px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 999;
+	background-color: #f6f6f6;
+}
+
+nav ul {
+	max-width: 960px;
+	height: 100%;
+	margin: auto;
+	text-align: center;
+}
+
+nav li {
+	display: inline-block;
+	margin-right: -4px;
+	padding: 20px;
+	font-family: 'Open Sans', sans-serif;
+	text-transform: uppercase;
+	font-size: 12px;
+}
+
+/*nav.stick {
+    position: fixed;
+    top: 0;
+    z-index: 10000;
+    margin-top: 0px;
+}*/
+
+nav li a {
+    color: #707C80;
+}
+
+/*a.nav-active {
+    color: #434a4c;
+}*/
+
+#outer_circle {
+	width: 25px;
+	height: 25px;
+	position: absolute;
+	top: 18px;
+	left: 40px;
+	border: 2px solid #394042;
+
+	-webkit-border-radius: 50px;
+	-moz-border-radius: 50px;
+	border-radius: 50px;
+}
+
+#inner_circle {
+	width: 15px;
+	height: 15px;
+	margin: 3px 0 0 3px;
+	display: none;
+	border: 2px solid #394042;
+
+	-webkit-border-radius: 50px;
+	-moz-border-radius: 50px;
+	border-radius: 50px;
+}
+
+/*------------------------*/
+
+/* HOME PAGE */
+
+#home_page {
+	/*margin-top: 60px;*/
+	width: 100%;
+	padding-bottom: 50px;
+	background-color: #707C80;
+}
+
+.initials_image {
+	padding: 50px;
+	text-align: center;
+}
+
+.name_surname {
+	text-align: center;
+}
+
+.contact_button {
+	width: 200px;
+	margin: auto;
+	margin-top: 60px;
+	margin-bottom: 0px;
+	padding: 15px;
+	text-align: center;
+	text-transform: uppercase;
+	color: #fff;
+	background-color: #383F42;
+	font-size: 15px;
+	font-family: 'PT Sans', sans-serif;
+
+	-webkit-border-radius: 50px;
+	-moz-border-radius: 50px;
+	border-radius: 50px;
+}
+
+/*-------------------------*/
+
+/* ABOUT PAGE */
+
+#about_page {
+	background-color: #fff;
+}
+
+.page_title {
+	font-family: 'Lato', sans-serif;
+	letter-spacing: 3px;
+	font-size: 25px;
+	text-transform: uppercase;
+	text-align: center;
+	color: #394042;
+	padding: 50px 0 50px 0;
+
+}
+
+.about_me {
+	max-width: 960px;
+	font-family: 'Open Sans', sans-serif;
+	line-height: 28px;
+	color: #707C80;
+	font-size: 14px;
+	text-align: justify;
+    text-justify: inter-word;
+	margin: auto;
+	padding-bottom: 50px;
+}
+/*-----------------------*/
+
+/* RESUME */
+
+#resume_page {
+	background-color: #E7E6E6;
+	padding: 50px;
+}
+
+.resume {
+	width: 960px;
+	margin: auto;
+}
+
+.resume ul {
+	margin-bottom: 50px;
+}
+
+.resume ul:last-child {
+	margin-bottom: 0px;
+}
+
+.resume li {
+	display: inline-block;
+	margin-right: -4px;
+}
+
+.resume_title {
+	font-family: 'Lato', sans-serif;
+	letter-spacing: 2px;
+	vertical-align: top;
+	font-size: 15px;
+	text-transform: uppercase;
+	color: #394042;
+	width: 20%;
+}
+
+.resume_content {
+	width: 60%;
+	padding: 0 20px 0 20px;
+	vertical-align: top;
+	color: #394042;
+	font-family: 'Open Sans', sans-serif;
+	line-height: 27px;
+	font-size: 14px;
+	text-align: justify;
+    text-justify: inter-word;
+}
+
+.resume_content.plus {
+	width: 80%;
+}
+
+.resume_dates {
+	width: 20%;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 14px;
+	vertical-align: top;
+	color: #394042;
+}
+
+/*--------------------*/
+
+/* WHY ME PAGE */
+
+#why_me_page {
+	background-color: #fff;
+}
+
+.why_me_reasons {
+	max-width: 960px;
+	font-family: 'Open Sans', sans-serif;
+	color: #707C80;
+	line-height: 25px;
+	font-size: 14px;
+	margin: auto;
+}
+
+.why_me_reasons li {
+	width: 33.3333333%;
+	padding: 0 20px 50px 20px;
+	display: inline-block;
+	vertical-align: top;
+	margin-right: -4px;
+	text-align: justify;
+    text-justify: inter-word;
+}
+
+.reasons_title {
+	display: block;
+	margin-bottom: 10px;
+	text-align: center;
+	font-family: 'PT Sans', sans-serif;
+	letter-spacing: 3px;
+	font-size: 16px;
+	text-transform: uppercase;
+	color: #394042;
+}
+
+/*---------------------*/
+
+/* RECOMMENDATIONS */
+
+#recommendations {
+	background-color: #E7E6E6;
+}
+
+.referral ul {
+	max-width: 760px;
+	margin: auto;
+	padding-bottom: 50px;
+}
+
+.referral li {
+	width: 50%;
+	display: inline-block;
+	vertical-align: top;
+	padding: 0 20px 0 20px;
+	margin-right: -4px;
+	font-family: 'Open Sans', sans-serif;
+	color: #394042;
+	line-height: 25px;
+	font-size: 14px;
+	text-align: justify;
+    text-justify: inter-word;
+}
+
+.rec_person,
+.position {
+	display: block;
+	margin-top: 10px;
+	font-family: 'PT Sans', sans-serif;
+	font-size: 16px;
+	font-weight: bold;
+	line-height: normal;
+}
+
+.rec_person a {
+	color: #394042;
+}
+
+.rec_person a:hover {
+	text-decoration: underline;
+}
+
+.position {
+	font-style: italic;
+	margin-top: 0;
+	font-size: 12px;
+	font-weight: normal;
+}
+
+/* ------------------------*/
+
+/* CONTACT PAGE */
+
+#contact_page {
+	background-color: #707C80;
+	padding-bottom: 50px;
+}
+
+.page_title.contact {
+	color: #fff;
+}
+
+.contact_container {
+	max-width: 960px;
+	margin: auto;
+}
+
+ul.contact_container li {
+	display: inline-block;
+	margin-right: -4px;
+	vertical-align: top;
+	font-family: 'Open Sans', sans-serif;
+	color: #ccc;
+}
+
+.contact_me {
+	width: 40%;
+	font-size: 12px;
+}
+
+.contact_form {
+	width: 60%;
+}
+
+ul.contact_details li {
+	display: block;
+	margin-bottom: 8px;
+}
+
+ul.contact_details img {
+	margin-right: 5px;
+}
+
+/* --------------- */
+
+/* FOOTER */
+
+#footer {
+	padding: 50px 0 10px 0;
+	background-color: #F6F6F6;
+	text-align: center;
+	font-family: 'PT Sans', sans-serif;
+	font-size: 12px;
+	text-transform: uppercase;
+	color: #676C6F;
+}
+
+/* ---------------------*/
