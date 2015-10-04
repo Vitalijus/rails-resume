@@ -6,6 +6,7 @@ gem 'rails', '4.0.8'
 # Use postgresql as the database for Active Record
 gem 'pg'
 gem 'thin'
+gem 'geocoder'
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.2'

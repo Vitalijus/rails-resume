@@ -15,13 +15,17 @@
 </head>
 	<body>
 		<header>
+		<%= request.remote_ip %>
 			<!--<div id="nav-anchor"></div>-->
 			<nav>
-			  <div id="outer_circle">
-			    <div id="inner_circle">
+				<%= link_to profiles_create_path, remote: true do %>
+				  <div id="outer_circle">
+				    <div id="inner_circle">
 
-			    </div>
-			  </div>
+				    </div>
+				  </div>
+				  <%= @adverts %>
+				<% end %>
 
 			  <ul>
 			    <li><a href="#home_page">Home</a></li>
@@ -32,7 +36,12 @@
 			</nav>
 		</header>
 
-	<%= yield %>
+		<%= yield %>
+
+		<div id="footer">
+			&copy;<%= Time.now.year %> - Handcrafted by Vitalijus Desukas<br>
+			<%= image_tag "signature.png", alt: "signature", width: 250 %>
+		</div>
 
 	</body>
 </html>

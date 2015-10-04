@@ -38,6 +38,7 @@ GEM
     erubis (2.7.0)
     eventmachine (1.0.7)
     execjs (2.6.0)
+    geocoder (1.2.9)
     hike (1.2.3)
     i18n (0.7.0)
     jbuilder (1.5.3)
@@ -119,6 +120,7 @@ PLATFORMS
 
 DEPENDENCIES
   coffee-rails (~> 4.0.0)
+  geocoder
   jbuilder (~> 1.2)
   jquery-rails
   pg
