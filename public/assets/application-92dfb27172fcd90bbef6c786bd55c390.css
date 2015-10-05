@@ -1,0 +1,433 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+
+
+ */
+
+
+body {
+	margin: 60px 40px 40px 40px;
+	background-color: #F6F6F6;
+}
+
+*,
+*:after,
+*:before {
+  margin: 0;
+  padding: 0;
+    /* Removes padding behaviour on widths */
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+li {
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h6, h6  {
+  margin: 0;
+  padding: 0;
+  font-size: inherit;
+  font-weight: inherit;
+}
+/* HEADER NAVIGATION */
+/* line 4, /home/vitalijus/rails/mypage/app/assets/stylesheets/profiles.css.scss */
+nav {
+  width: 100%;
+  height: 60px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  background-color: #f6f6f6;
+}
+
+/* line 15, /home/vitalijus/rails/mypage/app/assets/stylesheets/profiles.css.scss */
+nav ul {
+  max-width: 960px;
+  height: 100%;
+  margin: auto;
+  text-align: center;
+}
+
+/* line 22, /home/vitalijus/rails/mypage/app/assets/stylesheets/profiles.css.scss */
+nav li {
+  display: inline-block;
+  margin-right: -4px;
+  padding: 20px;
+  font-family: 'Open Sans', sans-serif;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+/*nav.stick {
+    position: fixed;
+    top: 0;
+    z-index: 10000;
+    margin-top: 0px;
+}*/
+/* line 38, /home/vitalijus/rails/mypage/app/assets/stylesheets/profiles.css.scss */
+nav li a {
+  color: #707C80;
+}
+
+/*a.nav-active {
+    color: #434a4c;
+}*/
+/* line 46, /home/vitalijus/rails/mypage/app/assets/stylesheets/profiles.css.scss */
+#outer_circle {
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  top: 18px;
+  left: 40px;
+  border: 2px solid #394042;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  border-radius: 50px;
+}
+
+/* line 59, /home/vitalijus/rails/mypage/app/assets/stylesheets/profiles.css.scss */
+#inner_circle {
+  width: 15px;
+  height: 15px;
+  margin: 3px 0 0 3px;
+  display: none;
+  border: 2px solid #394042;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  border-radius: 50px;
+}
+
+/* line 71, /home/vitalijus/rails/mypage/app/assets/stylesheets/profiles.css.scss */
+#counter {
+  position: absolute;
+  top: 20px;
+  left: 70px;
+  font-size: 14px;
+  font-family: 'Lato', sans-serif;
+  font-weight: bold;
+  border: 0px solid red;
+}
+
+/*------------------------*/
+/* HOME PAGE */
+/* line 85, /home/vitalijus/rails/mypage/app/assets/stylesheets/profiles.css.scss */
+#home_page {
+  /*margin-top: 60px;*/
+  width: 100%;
+  padding-bottom: 50px;
+  background-color: #707C80;
+}
+
+/* line 92, /home/vitalijus/rails/mypage/app/assets/stylesheets/profiles.css.scss */
+.initials_image {
+  padding: 50px;
+  text-align: center;
+}
+
+/* line 97, /home/vitalijus/rails/mypage/app/assets/stylesheets/profiles.css.scss */
+.name_surname {
+  text-align: center;
+}
+
+/* line 101, /home/vitalijus/rails/mypage/app/assets/stylesheets/profiles.css.scss */
+.contact_button {
+  width: 200px;
+  margin: auto;
+  margin-top: 60px;
+  margin-bottom: 0px;
+  padding: 15px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #383F42;
+  font-size: 15px;
+  font-family: 'PT Sans', sans-serif;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  border-radius: 50px;
+}
+
+/*-------------------------*/
+/* ABOUT PAGE */
+/* line 123, /home/vitalijus/rails/mypage/app/assets/stylesheets/profiles.css.scss */
+#about_page {
+  background-color: #fff;
+}
+
+/* line 127, /home/vitalijus/rails/mypage/app/assets/stylesheets/profiles.css.scss */
+.page_title {
+  font-family: 'Lato', sans-serif;
+  letter-spacing: 3px;
+  font-size: 25px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #394042;
+  padding: 50px 0 50px 0;
+}
+
+/* line 138, /home/vitalijus/rails/mypage/app/assets/stylesheets/profiles.css.scss */
+.about_me {
+  max-width: 960px;
+  font-family: 'Open Sans', sans-serif;
+  line-height: 28px;
+  color: #707C80;
+  font-size: 14px;
+  text-align: justify;
+  text-justify: inter-word;
+  margin: auto;
+  padding-bottom: 50px;
+}
+
+/*-----------------------*/
+/* RESUME */
+/* line 153, /home/vitalijus/rails/mypage/app/assets/stylesheets/profiles.css.scss */
+#resume_page {
+  background-color: #E7E6E6;
+  padding: 50px;
+}
+
+/* line 158, /home/vitalijus/rails/mypage/app/assets/stylesheets/profiles.css.scss */
+.resume {
+  width: 960px;
+  margin: auto;
+}
+
+/* line 163, /home/vitalijus/rails/mypage/app/assets/stylesheets/profiles.css.scss */
+.resume ul {
+  margin-bottom: 50px;
+}
+
+/* line 167, /home/vitalijus/rails/mypage/app/assets/stylesheets/profiles.css.scss */
+.resume ul:last-child {
+  margin-bottom: 0px;
+}
+
+/* line 171, /home/vitalijus/rails/mypage/app/assets/stylesheets/profiles.css.scss */
+.resume li {
+  display: inline-block;
+  margin-right: -4px;
+}
+
+/* line 176, /home/vitalijus/rails/mypage/app/assets/stylesheets/profiles.css.scss */
+.resume_title {
+  font-family: 'Lato', sans-serif;
+  letter-spacing: 2px;
+  vertical-align: top;
+  font-size: 15px;
+  text-transform: uppercase;
+  color: #394042;
+  width: 20%;
+}
+
+/* line 186, /home/vitalijus/rails/mypage/app/assets/stylesheets/profiles.css.scss */
+.resume_content {
+  width: 60%;
+  padding: 0 20px 0 20px;
+  vertical-align: top;
+  color: #394042;
+  font-family: 'Open Sans', sans-serif;
+  line-height: 27px;
+  font-size: 14px;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+/* line 198, /home/vitalijus/rails/mypage/app/assets/stylesheets/profiles.css.scss */
+.resume_content.plus {
+  width: 80%;
+}
+
+/* line 202, /home/vitalijus/rails/mypage/app/assets/stylesheets/profiles.css.scss */
+.resume_dates {
+  width: 20%;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  vertical-align: top;
+  color: #394042;
+}
+
+/*--------------------*/
+/* WHY ME PAGE */
+/* line 214, /home/vitalijus/rails/mypage/app/assets/stylesheets/profiles.css.scss */
+#why_me_page {
+  background-color: #fff;
+}
+
+/* line 218, /home/vitalijus/rails/mypage/app/assets/stylesheets/profiles.css.scss */
+.why_me_reasons {
+  max-width: 960px;
+  font-family: 'Open Sans', sans-serif;
+  color: #707C80;
+  line-height: 25px;
+  font-size: 14px;
+  margin: auto;
+}
+
+/* line 227, /home/vitalijus/rails/mypage/app/assets/stylesheets/profiles.css.scss */
+.why_me_reasons li {
+  width: 33.3333333%;
+  padding: 0 20px 50px 20px;
+  display: inline-block;
+  vertical-align: top;
+  margin-right: -4px;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+/* line 237, /home/vitalijus/rails/mypage/app/assets/stylesheets/profiles.css.scss */
+.reasons_title {
+  display: block;
+  margin-bottom: 10px;
+  text-align: center;
+  font-family: 'PT Sans', sans-serif;
+  letter-spacing: 3px;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #394042;
+}
+
+/*---------------------*/
+/* RECOMMENDATIONS */
+/* line 252, /home/vitalijus/rails/mypage/app/assets/stylesheets/profiles.css.scss */
+#recommendations {
+  background-color: #E7E6E6;
+}
+
+/* line 256, /home/vitalijus/rails/mypage/app/assets/stylesheets/profiles.css.scss */
+.referral ul {
+  max-width: 760px;
+  margin: auto;
+  padding-bottom: 50px;
+}
+
+/* line 262, /home/vitalijus/rails/mypage/app/assets/stylesheets/profiles.css.scss */
+.referral li {
+  width: 50%;
+  display: inline-block;
+  vertical-align: top;
+  padding: 0 20px 0 20px;
+  margin-right: -4px;
+  font-family: 'Open Sans', sans-serif;
+  color: #394042;
+  line-height: 25px;
+  font-size: 14px;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+/* line 277, /home/vitalijus/rails/mypage/app/assets/stylesheets/profiles.css.scss */
+.rec_person,
+.position {
+  display: block;
+  margin-top: 10px;
+  font-family: 'PT Sans', sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: normal;
+}
+
+/* line 286, /home/vitalijus/rails/mypage/app/assets/stylesheets/profiles.css.scss */
+.rec_person a {
+  color: #394042;
+}
+
+/* line 290, /home/vitalijus/rails/mypage/app/assets/stylesheets/profiles.css.scss */
+.rec_person a:hover {
+  text-decoration: underline;
+}
+
+/* line 294, /home/vitalijus/rails/mypage/app/assets/stylesheets/profiles.css.scss */
+.position {
+  font-style: italic;
+  margin-top: 0;
+  font-size: 12px;
+  font-weight: normal;
+}
+
+/* ------------------------*/
+/* CONTACT PAGE */
+/* line 305, /home/vitalijus/rails/mypage/app/assets/stylesheets/profiles.css.scss */
+#contact_page {
+  background-color: #707C80;
+  padding-bottom: 50px;
+}
+
+/* line 310, /home/vitalijus/rails/mypage/app/assets/stylesheets/profiles.css.scss */
+.page_title.contact {
+  color: #fff;
+}
+
+/* line 314, /home/vitalijus/rails/mypage/app/assets/stylesheets/profiles.css.scss */
+.contact_container {
+  max-width: 960px;
+  margin: auto;
+}
+
+/* line 319, /home/vitalijus/rails/mypage/app/assets/stylesheets/profiles.css.scss */
+ul.contact_container li {
+  display: inline-block;
+  margin-right: -4px;
+  vertical-align: top;
+  font-family: 'Open Sans', sans-serif;
+  color: #ccc;
+}
+
+/* line 327, /home/vitalijus/rails/mypage/app/assets/stylesheets/profiles.css.scss */
+.contact_me {
+  width: 40%;
+  font-size: 12px;
+}
+
+/* line 332, /home/vitalijus/rails/mypage/app/assets/stylesheets/profiles.css.scss */
+.contact_form {
+  width: 60%;
+}
+
+/* line 336, /home/vitalijus/rails/mypage/app/assets/stylesheets/profiles.css.scss */
+ul.contact_details li {
+  display: block;
+  margin-bottom: 8px;
+}
+
+/* line 341, /home/vitalijus/rails/mypage/app/assets/stylesheets/profiles.css.scss */
+ul.contact_details img {
+  margin-right: 5px;
+}
+
+/* --------------- */
+/* FOOTER */
+/* line 349, /home/vitalijus/rails/mypage/app/assets/stylesheets/profiles.css.scss */
+#footer {
+  padding: 50px 0 10px 0;
+  background-color: #F6F6F6;
+  text-align: center;
+  font-family: 'PT Sans', sans-serif;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #676C6F;
+}
+
+/* ---------------------*/
