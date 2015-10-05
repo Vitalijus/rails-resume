@@ -17,14 +17,7 @@
 		<header>
 			<!--<div id="nav-anchor"></div>-->
 			<nav>
-				<%= link_to profiles_create_path, remote: true do %>
-				  <div id="outer_circle">
-				    <div id="inner_circle">
-
-				    </div>
-				  </div>
-				  <%= @adverts %>
-				<% end %>
+			  <%= render "counter" %>
 
 			  <ul>
 			    <li><a href="#home_page">Home</a></li>
