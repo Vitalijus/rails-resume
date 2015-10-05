@@ -6,9 +6,13 @@ class ProfilesController < ApplicationController
   end
 
   def create
-  	@profile = Profile.new
-  	@profile.save
-  	redirect_to :back
+  	if Profile.exists?(ip: request.remote_ip)
+  		
+  	else
+	  	@profile = Profile.new(ip: request.remote_ip)
+	  	@profile.save
+	  	redirect_to :back
+	end
   end
 
   private
