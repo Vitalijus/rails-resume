@@ -3,6 +3,8 @@ class ProfilesController < ApplicationController
 
   def index
   	@adverts = Profile.all.count
+  	@new_email = Profile.new
+  	#EmailMailer.request(@new_email).deliver
   end
 
   def create

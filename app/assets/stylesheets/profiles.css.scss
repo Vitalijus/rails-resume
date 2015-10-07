@@ -68,13 +68,12 @@ nav li a {
 }
 
 #counter {
-	position: absolute;
-	top: 20px;
-	left: 70px;
+	width: 20px;
+	height: 20px;
 	font-size: 14px;
 	font-family: 'Lato', sans-serif;
 	font-weight: bold;
-	border: 0px solid red;
+	border: 1px solid red;
 }
 
 /*------------------------*/
@@ -117,10 +116,11 @@ nav li a {
 
 /*-------------------------*/
 
-/* ABOUT PAGE */
+/* RESIME PAGE */
 
-#about_page {
+#resume_page {
 	background-color: #fff;
+	padding-bottom: 50px;
 }
 
 .page_title {
@@ -138,20 +138,12 @@ nav li a {
 	max-width: 960px;
 	font-family: 'Open Sans', sans-serif;
 	line-height: 28px;
-	color: #707C80;
+	color: #646f73;
 	font-size: 14px;
 	text-align: justify;
     text-justify: inter-word;
 	margin: auto;
 	padding-bottom: 50px;
-}
-/*-----------------------*/
-
-/* RESUME */
-
-#resume_page {
-	background-color: #E7E6E6;
-	padding: 50px;
 }
 
 .resume {
@@ -160,7 +152,7 @@ nav li a {
 }
 
 .resume ul {
-	margin-bottom: 50px;
+	margin-bottom: 30px;
 }
 
 .resume ul:last-child {
@@ -188,10 +180,23 @@ nav li a {
 	vertical-align: top;
 	color: #394042;
 	font-family: 'Open Sans', sans-serif;
-	line-height: 27px;
+	font-size: 14px;;
+}
+
+.position_name {
+	font-weight: bold;
 	font-size: 14px;
-	text-align: justify;
-    text-justify: inter-word;
+	color: #f16164;
+}
+
+.company_name {
+	font-size: 12px;
+	font-weight: 600;
+}
+
+.work_description {
+	margin-top: 10px;
+	font-style: italic;
 }
 
 .resume_content.plus {
@@ -201,12 +206,269 @@ nav li a {
 .resume_dates {
 	width: 20%;
 	font-family: 'Open Sans', sans-serif;
-	font-size: 14px;
+	font-size: 12px;
+	font-weight: 600;
 	vertical-align: top;
-	color: #394042;
+	color: #74797a;
 }
 
 /*--------------------*/
+
+/* FOR HIRE */
+
+#for_hire {
+	background-color: #707C80;
+	overflow: hidden;
+	padding: 80px 0 80px 0;
+}
+
+#for_hire_wrapper {
+	max-width: 960px;
+	margin: auto;
+}
+
+.for_hire_title {
+	width: 80%;
+	float: left;
+	padding: 8px 0 10px 0;
+	color: #fff;
+	text-align: center;
+	font-family: 'Lato', sans-serif;
+	font-weight: bold;
+	font-size: 22px;
+}
+
+.contact_now_button {
+	width: 20%;
+	float: right;
+	padding: 10px 15px 10px 15px;
+	color: #fff;
+	font-size: 18px;
+	font-family: 'PT Sans', sans-serif;
+	text-align: center;
+	text-transform: uppercase;
+	border: 1px solid #fff;
+
+	-webkit-border-radius: 50px;
+	-moz-border-radius: 50px;
+	border-radius: 50px;
+
+	-webkit-transition: background 150ms linear;
+  	-moz-transition: background 150ms linear;
+  	-o-transition: background 150ms linear;
+  	-ms-transition: background 150ms linear;
+  	transition: background 150ms linear;
+}
+
+a:hover .contact_now_button {
+	background-color: #383F42;
+	border: 1px solid #383F42;
+}
+
+/* -------------------------*/
+
+/* SKILLS */
+
+#skills_page {
+	background-color: #E7E6E6;
+	padding-bottom: 20px;
+	color: #394042;
+	overflow: hidden;
+}
+
+.graph_wrapper {
+	max-width: 900px;
+	margin: auto;
+	margin-bottom: 30px;
+	padding-bottom: 30px;
+}
+
+ul.graph_name {
+	margin-bottom: 20px;
+}
+
+ul.graph_name li {
+	width: 50%;
+	display: inline-block;
+	margin-right: -4px;
+	text-align: center;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #707C80;
+}
+
+.skills {
+	width: 45%;
+	height: 100%;
+	display: inline-block;
+	position: relative;
+	border-left: 2px solid #707C80;
+	border-bottom: 2px solid #707C80;
+}
+
+.tools {
+	width: 45%;
+	height: 100%;
+	display: inline-block;
+	float: right;
+	position: relative;
+	border-left: 2px solid #707C80;
+	border-bottom: 2px solid #707C80;
+}
+
+.languages {
+	width: 45%;
+	height: 100%;
+	display: inline-block;
+	position: relative;
+	border-left: 2px solid #707C80;
+	border-bottom: 2px solid #707C80;
+}
+
+.api {
+	width: 45%;
+	height: 100%;
+	position: relative;
+	display: inline-block;
+	float: right;
+	border-left: 2px solid #707C80;
+	border-bottom: 2px solid #707C80;
+}
+
+.graphs {
+	border: 0px solid blue;
+}
+
+.graph_skills, .graph_tool,
+.graph_language, .graph_api {
+	padding: 5px 15px 5px 15px;
+	font-family: 'PT Sans', sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	color: #fff;
+	text-transform: uppercase;
+}
+
+.graph_skills.web_design {
+	width: 80%;
+	background-color: #A3C2C5;
+}
+
+.graph_skills.digital_marketing {
+	width: 75%;
+	background-color: #486B6D;
+}
+
+.graph_skills.analytics {
+	width: 65%;
+	background-color: #719299;
+}
+
+.graph_skills.conversion {
+	width: 68%;
+	background-color: #2E4D50;
+}
+
+.graph_language.lithuanian {
+	width: 100%;
+	background-color: #719299;
+}
+
+.graph_language.russian {
+	width: 100%;
+	background-color: #A3C2C5;
+}
+
+.graph_language.english {
+	width: 88%;
+	background-color: #446A6B;
+}
+
+.graph_language.german {
+	width: 60%;
+	background-color: #2E4D50;
+}
+
+.graph_tool.html_css {
+	width: 100%;
+	background-color: #A3C2C5;
+}
+
+.graph_tool.js {
+	width: 65%;
+	background-color: #486B6D;
+}
+
+.graph_tool.rails {
+	width: 90%;
+	background-color: #719299;
+}
+
+.graph_tool.image_editor {
+	width: 60%;
+	background-color: #2E4D50;
+}
+
+.graph_api.facebook {
+	width: 60%;
+	background-color: #719299;
+}
+
+.graph_api.twitter {
+	width: 70%;
+	background-color: #A3C2C5;
+}
+
+.graph_api.stripe {
+	width: 65%;
+	background-color: #446A6B;
+}
+
+.graph_api.cloudinary {
+	width: 75%;
+	background-color: #2E4D50;
+}
+
+.dots {
+	width: 100%;
+	position: absolute;
+	bottom: -10px;
+}
+
+.dots li {
+	width: 20%;
+	height: 20px;
+	position: relative;
+	display: inline-block;
+	margin-right: -4px;
+}
+
+.dot {
+	width: 9px;
+	height: 9px;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	background-color: #707C80;
+
+	-webkit-border-radius: 50px;
+	-moz-border-radius: 50px;
+	border-radius: 50px;
+}
+
+.dot_name {
+	width: 100px;
+	position: absolute;
+	left: -45px;
+	bottom: -20px;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 12px;
+	text-align: center;
+	color: #707C80;
+}
+/*------------------------*/
 
 /* WHY ME PAGE */
 
