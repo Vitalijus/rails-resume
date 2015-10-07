@@ -166,7 +166,7 @@
 <section id="for_hire">
   <div id="for_hire_wrapper">
     <div class="for_hire_title">
-      I will show you how to open doors for consistently profitable traffic
+      Are you interested in boosting your revenue?
     </div>
 
     <a href="#">
@@ -490,6 +490,9 @@
     <ul>
       <li>
         <span class="reasons_title">Vision.</span>
+        I see digital marketing as science and form of art. 
+
+
         I see digital design as an art and a driver of customer delight. I'm the catalyst that mixes ideas, pushes concepts and finds the best way to energize brands through sophisticated visual design.
       </li>
 
@@ -524,7 +527,7 @@
 <section id="for_hire">
   <div id="for_hire_wrapper">
     <div class="for_hire_title">
-      Are you interested in boosting your revenue?
+      I will show you how to open doors for consistently profitable traffic
     </div>
 
     <a href="#">
@@ -544,13 +547,13 @@
     <div class="referral">
       <ul>
         <li>
-          "I see digital design as an art and a driver of customer delight. I'm the catalyst that mixes ideas, pushes concepts and finds the best way to energize brands through sophisticated visual design."<br>
+          "I have had the pleasure of viewing Mr. Desukas’ professional development during his work at Allianz AMOS, and I can state with confidence that he is a motivated and responsible person with a high degree of integrity."<br>
           <span class="rec_person"><a href="https://www.linkedin.com/pub/agata-przygoda/2/626/6aa" target="_blank">Agata Przygoda</a></span>
           <span class="position">Executive Assistant - Group COO Office at Allianz Group</span>
         </li>
 
         <li>
-          "I don't believe in design without purpose. I see digital design as a science and believe that design plays a role in solving problems that improve the consumer experience."<br>
+          "I am delighted to have this opportunity to recommend Mr. Vitalijus Desukas. As the owner of the Bergx2 GmbH, I have seen his develop into a dedicated worker with a mind well-adapted to the demands of the business world.
           <span class="rec_person"><a href="https://www.linkedin.com/in/istokistok" target="_blank">Istok Sernc</a></span>
           <span class="position">Managing Director - Bergx2 GmbH</span>
         </li>
@@ -562,7 +565,7 @@
 <!-- CONTACT PAGE -->
 <section id="contact_page">
   <div class="page_title contact">
-    Contact me
+    Contact 
   </div>
 
   <ul class="contact_container">
@@ -583,19 +586,22 @@
 
         <li>
           <%= image_tag "mail.png", alt: "email", width: 20 %>
-          hello@vdesukas.lt
+          vitalij.desuk@gmail.com<!--hire@vitalijusdesukas.com-->
         </li>
       </ul>
     </li>
 
     <li class="contact_form">
-      Contact form
+      
     </li>
   </ul>
 </section>
 
-<%= form_for Profile.new do |f| %>
-  <%= f.text_field :ip %>
+<div id="screen">
 
-  <%= f.submit "Send" %>
-<% end %>
+</div>
+
+<script>
+if ( $(document).ready )
+  $("#screen").slideUp(500);
+</script>
