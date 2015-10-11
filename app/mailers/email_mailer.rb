@@ -1,7 +1,7 @@
 class EmailMailer < ActionMailer::Base
   default from: "vitalij.desuk@gmail.com"
 
-  def request(email)
+  def email_mailer(email)
     @email = email
     mail(to: "vitalij.desuk@gmail.com", 
     	subject: 'Request from a client')

@@ -1,12 +1,8 @@
 Mypage::Application.routes.draw do
-  get "emails/new"
-  get "emails/create"
-   get "profiles/index"
-   get "profiles/create"
+  post "emails/create"
+  get "profiles/index"
+  post "profiles/create"
 
-  resources :profiles do
-    resources :emails, only: [:create]
-  end
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

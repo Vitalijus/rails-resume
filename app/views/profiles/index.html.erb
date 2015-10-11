@@ -8,9 +8,11 @@
     <%= image_tag "name.png", alt: "name", width: 400 %>
   </div>
 
-  <div class="contact_button">
-    For hire
-  </div>
+  <a href="#contact_page">
+    <div class="contact_button">
+      For hire
+    </div>
+  </a>
 </section>
 
 <!-- RESUME -->
@@ -169,7 +171,7 @@
       Are you interested in boosting your revenue?
     </div>
 
-    <a href="#">
+    <a href="#contact_page">
       <div class="contact_now_button">
         Contact now
       </div>
@@ -177,308 +179,22 @@
   </div>
 </section>
 
-<!-- SKILLS PAGE -->
-<section id="skills_page">
-  <div class="page_title">
-    Skills & Tools
-  </div>
+<%= render "skills" %>
 
-    <div class="graph_wrapper">
-      <ul class="graph_name">
-        <li>Marketing</li>
-        <li>Soft</li>
-      </ul>
-
-      <div class="skills">
-        <div class="graphs">
-          <ul>
-            <li>
-              <div class="graph_skills web_design">
-                Web (responsive) design, UI/UX
-              </div>
-            </li>
-
-            <li>
-              <div class="graph_skills digital_marketing">
-                SEO, SMM, PPC, email
-              </div>
-            </li>
-
-            <li>
-              <div class="graph_skills analytics">
-                 Web analytics
-              </div>
-            </li>
-
-            <li>
-              <div class="graph_skills conversion">
-                 Conversion optimization, A/B testing
-              </div>
-            </li>
-          </ul>
-        </div>
-
-        <div class="dots">
-          <ul>
-            <li>
-              <div class="dot">
-                <div class="dot_name">
-                  Begginer <!-- I'm just starting to explore this skill -->
-                </div>
-              </div>
-            </li>
-            <li>
-              <div class="dot">
-                <div class="dot_name">
-                  Familiar <!-- You have basic knowledge of this skill, but plenty of room to learn more -->
-                </div>
-              </div>
-            </li>
-            <li>
-              <div class="dot">
-                <div class="dot_name">
-                  Proficient <!-- You are comfortable using this skill in routine ways. -->
-                </div>
-              </div>
-            </li>
-            <li>
-              <div class="dot">
-                <div class="dot_name">
-                  Expert <!-- You are aheadof the pack, and are fluent in this skill and its latest developments.-->
-                </div>
-              </div>
-            </li>
-            <li>
-              <div class="dot">
-                <div class="dot_name">
-                  Master<!-- You are a pro, and know this skill inside and out -->
-                </div>
-              </div>
-            </li>
-          </ul>
-        </div>
+<!-- FOR HIRE -->
+  <section id="for_hire">
+    <div id="for_hire_wrapper">
+      <div class="for_hire_title">
+        I will show you how to open doors for consistently profitable traffic
       </div>
 
-      <div class="tools">
-        <div class="graphs">
-          <ul>
-            <li>
-              <div class="graph_tool html_css">
-                HTML & CSS
-              </div>
-            </li>
-
-            <li>
-              <div class="graph_tool js">
-                JS, Jquery, AJAX
-              </div>
-            </li>
-
-            <li>
-              <div class="graph_tool rails">
-                Ruby on Rails (Ruby)
-              </div>
-            </li>
-
-            <li>
-              <div class="graph_tool image_editor">
-                Phtoshop, Illustrator
-              </div>
-            </li>
-          </ul>
+      <a href="#contact_page">
+        <div class="contact_now_button">
+          Contact now
         </div>
-
-        <div class="dots">
-          <ul>
-            <li>
-              <div class="dot">
-                <div class="dot_name">
-                  Begginer
-                </div>
-              </div>
-            </li>
-            <li>
-              <div class="dot">
-                <div class="dot_name">
-                  Familiar
-                </div>
-              </div>
-            </li>
-            <li>
-              <div class="dot">
-                <div class="dot_name">
-                  Proficient
-                </div>
-              </div>
-            </li>
-            <li>
-              <div class="dot">
-                <div class="dot_name">
-                  Expert
-                </div>
-              </div>
-            </li>
-            <li>
-              <div class="dot">
-                <div class="dot_name">
-                  Master
-                </div>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </div>
+      </a>
     </div>
-
-    <div class="graph_wrapper">
-      <ul class="graph_name">
-        <li>Languages</li>
-        <li>API</li>
-      </ul>
-
-      <div class="languages">
-        <div class="graphs">
-          <ul>
-            <li>
-              <div class="graph_language lithuanian">
-                Lithuanian
-              </div>
-            </li>
-
-            <li>
-              <div class="graph_language russian">
-                Russian
-              </div>
-            </li>
-
-            <li>
-              <div class="graph_language english">
-                English
-              </div>
-            </li>
-
-            <li>
-              <div class="graph_language german">
-                German
-              </div>
-            </li>
-          </ul>
-        </div>
-
-        <div class="dots">
-          <ul>
-            <li>
-              <div class="dot">
-                <div class="dot_name">
-                  Begginer <!-- I'm just starting to explore this skill -->
-                </div>
-              </div>
-            </li>
-            <li>
-              <div class="dot">
-                <div class="dot_name">
-                  Familiar <!-- You have basic knowledge of this skill, but plenty of room to learn more -->
-                </div>
-              </div>
-            </li>
-            <li>
-              <div class="dot">
-                <div class="dot_name">
-                  Proficient <!-- You are comfortable using this skill in routine ways. -->
-                </div>
-              </div>
-            </li>
-            <li>
-              <div class="dot">
-                <div class="dot_name">
-                  Expert <!-- You are aheadof the pack, and are fluent in this skill and its latest developments.-->
-                </div>
-              </div>
-            </li>
-            <li>
-              <div class="dot">
-                <div class="dot_name">
-                  Master<!-- You are a pro, and know this skill inside and out -->
-                </div>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="api">
-        <div class="graphs">
-          <ul>
-            <li>
-              <div class="graph_api facebook">
-                Facebook
-              </div>
-            </li>
-
-            <li>
-              <div class="graph_api twitter">
-                Twitter
-              </div>
-            </li>
-
-            <li>
-              <div class="graph_api stripe">
-                Stripe
-              </div>
-            </li>
-
-            <li>
-              <div class="graph_api cloudinary">
-                Cloudinary
-              </div>
-            </li>
-          </ul>
-        </div>
-
-        <div class="dots">
-          <ul>
-            <li>
-              <div class="dot">
-                <div class="dot_name">
-                  Begginer <!-- I'm just starting to explore this skill -->
-                </div>
-              </div>
-            </li>
-            <li>
-              <div class="dot">
-                <div class="dot_name">
-                  Familiar <!-- You have basic knowledge of this skill, but plenty of room to learn more -->
-                </div>
-              </div>
-            </li>
-            <li>
-              <div class="dot">
-                <div class="dot_name">
-                  Proficient <!-- You are comfortable using this skill in routine ways. -->
-                </div>
-              </div>
-            </li>
-            <li>
-              <div class="dot">
-                <div class="dot_name">
-                  Expert <!-- You are aheadof the pack, and are fluent in this skill and its latest developments.-->
-                </div>
-              </div>
-            </li>
-            <li>
-              <div class="dot">
-                <div class="dot_name">
-                  Master<!-- You are a pro, and know this skill inside and out -->
-                </div>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-
-  </div>
-</section>
+  </section>
 
 <!-- WHY ME PAGE -->
 <section id="why_me_page">
@@ -490,53 +206,35 @@
     <ul>
       <li>
         <span class="reasons_title">Vision.</span>
-        I see digital marketing as science and form of art. 
-
-
-        I see digital design as an art and a driver of customer delight. I'm the catalyst that mixes ideas, pushes concepts and finds the best way to energize brands through sophisticated visual design.
+        My vision is to bring your company to success through modern technologies. I will enhance your business with innovative ideas, new concepts and will find the best way to reinforce brand through sophisticated visual design.
       </li>
 
       <li>
         <span class="reasons_title">Problem-Solver.</span>
-        I don't believe in design without purpose. I see digital design as a science and believe that design plays a role in solving problems that improve the consumer experience.
+        Expertise I have acquired over the last several year allows me to identify problem and successfully solve it. This comes very handy regarding human-centered approach, to ensure that positive customer/user experience would be execute on the highest possible level.
       </li>
 
       <li>
         <span class="reasons_title">Strategic.</span>
-        I think like a business owner and identify opportunities to grow the business, the brand, whether indirectly or directly related to design.
+        A lifestyle entrepreneur. Business-like. I identify growth opportunities. Serve people. Execute plans. Solve problems. Create competitive advantage. Promote personal growth.
       </li>
 
       <li>
         <span class="reasons_title">Hands-On.</span>
-        I enjoy rolling up my sleeves and getting into the nitty gritty of design, yet my goal is ultimately to be a 'thought-leader' and provide more than ideas but inspiration.
+        I like getting my hands dirty. This way I can explore every little detail that will bring to ultimate success.
       </li>
 
       <li>
         <span class="reasons_title">Collaborative.</span>
-        I have high regards for team building, I work exceptionally well across all key functional areas including sales, web development, film production and customer service.
+        I like to set clear expectations, share and encourage to share knowledge, say good things about people, ask questions and listen others.
       </li>
 
       <li>
         <span class="reasons_title">Ambitious.</span>
-        I'm always looking for opportunities and aren’t afraid to take risks for the sake of making things better.
+        I'm always looking into the future and searching for new opportunities, and aren't afraid to take risks for the sake of reaching my goal.
       </li>
     </ul>
   </div>
-
-  <!-- FOR HIRE -->
-<section id="for_hire">
-  <div id="for_hire_wrapper">
-    <div class="for_hire_title">
-      I will show you how to open doors for consistently profitable traffic
-    </div>
-
-    <a href="#">
-      <div class="contact_now_button">
-        Contact now
-      </div>
-    </a>
-  </div>
-</section>
 
   <!-- RECOMMEDATIONS -->
   <div id="recommendations">
@@ -585,23 +283,41 @@
         </li>
 
         <li>
-          <%= image_tag "mail.png", alt: "email", width: 20 %>
-          vitalij.desuk@gmail.com<!--hire@vitalijusdesukas.com-->
+          <!--<%= image_tag "mail.png", alt: "email", width: 20 %>
+          vitalij.desuk@gmail.com  | hire@vitalijusdesukas.com-->
         </li>
       </ul>
     </li>
 
     <li class="contact_form">
-      
+      <%= form_for Email.new, url: emails_create_path do |f| %>
+        <div class="form_field">
+          <%= f.text_field :name, :placeholder => "Name(*)", :class => "field" %>
+        </div>
+
+        <div class="form_field">
+          <%= f.text_field :email, :placeholder => "Email(*)", :class => "field" %>
+        </div>
+
+        <div class="form_field">
+          <%= f.text_area :message, :placeholder => "Your message here...", :class => "field_message" %>
+        </div>
+
+        <div class="button_wrapper">
+          <%= f.submit "Send", :class => "form_button" %>
+        </div>
+      <% end %>
     </li>
   </ul>
 </section>
+
+
 
 <div id="screen">
 
 </div>
 
 <script>
-if ( $(document).ready )
-  $("#screen").slideUp(500);
+  if ( $(document).ready )
+    $("#screen").fadeOut(500);
 </script>

@@ -104,7 +104,6 @@ nav li a {
 	padding: 15px;
 	text-align: center;
 	text-transform: uppercase;
-	color: #fff;
 	background-color: #383F42;
 	font-size: 15px;
 	font-family: 'PT Sans', sans-serif;
@@ -114,9 +113,13 @@ nav li a {
 	border-radius: 50px;
 }
 
+a .contact_button {
+	color: #fff;
+}
+
 /*-------------------------*/
 
-/* RESIME PAGE */
+/* RESUME PAGE */
 
 #resume_page {
 	background-color: #fff;
@@ -270,10 +273,52 @@ a:hover .contact_now_button {
 /* SKILLS */
 
 #skills_page {
-	background-color: #E7E6E6;
-	padding-bottom: 20px;
+	background-color: #fff;
+	padding-bottom: 30px;
 	color: #394042;
 	overflow: hidden;
+}
+
+.skills_list {
+	width: 960px;
+	max-width: 960px;
+	margin: auto;
+	margin-bottom: 40px;
+}
+
+.skills_list ul {
+	width: 40%;
+	display: inline-block;
+	vertical-align: top;
+	margin-right: -4px;
+	
+}
+
+.skills_list li {
+	font-family: 'Open Sans', sans-serif;
+	color: #394042;
+	font-size: 14px;
+	padding: 0 15px 10px 15px;
+}
+
+.skills_list ul.skills_heading {
+	width: 20%;
+	height: 100%;
+	font-family: 'Lato', sans-serif;
+	letter-spacing: 2px;
+	vertical-align: top;
+	font-size: 15px;
+	color: #394042;
+}
+
+.star_gold,
+.star_grey {
+	float: right;
+	font-size: 16px;
+}
+
+.star_gold {
+	color: #CC9900;
 }
 
 .graph_wrapper {
@@ -592,6 +637,51 @@ ul.contact_container li {
 
 .contact_form {
 	width: 60%;
+}
+
+.form_field {
+	margin-bottom: 20px;
+}
+
+.field,
+.field_message {
+	width: 100%;
+	padding: 15px;
+	font-size: 12px;
+	color: #ccc;
+	background-color: #383F42;
+	border: none;
+}
+
+.field_message {
+	width: 100%;
+	height: 150px;
+}
+
+.form_button {
+	width: 150px;
+	height: 45px;
+	float: right;
+	cursor: pointer;
+	background-color: #383F42;
+	color: #ccc;
+	font-size: 14px;
+	font-weight: bold;
+	border: none;
+
+	-webkit-border-radius: 50px;
+	-moz-border-radius: 50px;
+	border-radius: 50px;
+
+	-webkit-transition: background 150ms linear;
+  	-moz-transition: background 150ms linear;
+  	-o-transition: background 150ms linear;
+  	-ms-transition: background 150ms linear;
+  	transition: background 150ms linear;
+}
+
+.form_button:hover {
+	background-color: #4b5254;
 }
 
 ul.contact_details li {

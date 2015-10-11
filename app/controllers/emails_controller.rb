@@ -1,18 +1,13 @@
 class EmailsController < ApplicationController
 
     def create
-    	#@email_seller = @advert.email_sellers.create(email_seller_params)
     	@email = Email.new(email_params)
 
-		respond_to do |format|
-	      if @email.save
-	      	EmailMailer.request(@email).deliver
-	        format.html { redirect_to(@advert, :notice => 'Message was successfully sent.') }
-	        format.xml  { render :xml => @advert, :status => :created, :location => @advert }
-	      else
-	        format.html { render :template => "adverts/show" }
-	        format.xml  { render :xml => @email_seller.errors, :status => :unprocessable_entity }
-	      end
+	    if @email.save
+	    	EmailMailer.email_mailer(@email).deliver
+	    	redirect_to root_url, :notice => 'Message was successfully sent.'
+	    else
+	        redirect_to root_url, :notice => 'Sorry, you have to try again.'
 	    end
 	end
 
