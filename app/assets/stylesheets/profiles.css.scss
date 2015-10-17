@@ -140,8 +140,6 @@ nav a.nav-active {
 }
 
 .landing_image {
-	/*background-image: url("/assets/mouse.jpeg");*/
-	/*background-image: image-url("table3.jpeg");*/
 	background-image: asset-data-url("bg.jpeg");
   	/* Background image is centered vertically and horizontally at all times */
   	background-position: center center;
