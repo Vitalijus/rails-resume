@@ -21,15 +21,15 @@ $(document).ready(function(){
      * We use the jQuery function scroll() to recalculate our variables as the 
      * page is scrolled/
      */
-    /*$(window).scroll(function(){
-        var window_top = $(window).scrollTop() + 0; // the "12" should equal the margin-top value for nav.stick
+    $(window).scroll(function(){
+        var window_top = $(window).scrollTop() + 20; // the "12" should equal the margin-top value for nav.stick
         var div_top = $('#nav-anchor').offset().top;
             if (window_top > div_top) {
                 $('nav').addClass('stick');
             } else {
                 $('nav').removeClass('stick');
             }
-    });*/
+    });
 
     /**
      * This part causes smooth scrolling using scrollto.js
@@ -37,7 +37,7 @@ $(document).ready(function(){
      */
     $('a').click(function(){
       $('html, body').animate({
-          scrollTop: $( $(this).attr('href') ).offset().top - 60
+          scrollTop: $( $(this).attr('href') ).offset().top /*- 60*/
       }, 350);
       return false;
     });
@@ -90,3 +90,24 @@ $(document).ready(function(){
 });
 
 
+$(document).ready(function() {
+    $(window).scroll( function(){
+    
+       
+        $('.fadeInBlock').each( function(i){
+            
+            var bottom_of_object = $(this).position().top + $(this).outerHeight();
+            var bottom_of_window = $(window).scrollTop() + $(window).height();
+            
+            /* Adjust the "200" to either have a delay or that the content starts fading a bit before you reach it  */
+            bottom_of_window = bottom_of_window + 10;  
+          
+            if( bottom_of_window > bottom_of_object ){
+                
+                $(this).animate({'opacity':'1'},500);
+                    
+            }
+        }); 
+    
+    });
+});

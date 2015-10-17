@@ -13,8 +13,9 @@
  */
 
 body {
-	margin: 60px 40px 40px 40px;
+	margin: 0px;
 	background-color: #F6F6F6;
+  
 }
 
 *,
@@ -48,4 +49,8 @@ h1, h2, h3, h4, h6, h6  {
   padding: 0;
   font-size: inherit;
   font-weight: inherit;
+}
+
+.fadeInBlock {
+    opacity:0;
 }

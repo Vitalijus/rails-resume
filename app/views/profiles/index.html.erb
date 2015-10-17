@@ -1,34 +1,71 @@
+<div class="landing_image">
+  
+</div>
+
 <!-- HOME PAGE -->
 <section id="home_page">
-  <div class="initials_image">
-    <%= image_tag "initials.png", alt: "initials", width: 120 %>
+  <div id="home_page_content">
+    <div class="initials_image">
+      VD
+    </div>
+
+    <div class="name_surname">
+      <!--<%= image_tag "name.png", alt: "name", width: 400 %>-->
+      Vitalijus Dešukas
+    </div>
+
+    <div class="name_subheader">
+      Digital marketer
+    </div>
+
+    <a href="#contact_page">
+      <div class="contact_button">
+        For hire
+      </div>
+    </a>
   </div>
 
-  <div class="name_surname">
-    <%= image_tag "name.png", alt: "name", width: 400 %>
-  </div>
-
-  <a href="#contact_page">
-    <div class="contact_button">
-      For hire
+  <a href="#resume_page">
+    <div id="arrow_down">
+      <%= image_tag "arrow_down.png" %>
     </div>
   </a>
 </section>
 
+
+
 <!-- RESUME -->
 <section id="resume_page">
+  <header>
+    <div id="nav-anchor"></div>
+    <nav>
+      <!--<%= render "counter" %>-->
+
+      <ul>
+        <li><a href="#home_page">Home</a></li>
+        <li><a href="#resume_page">Résumé</a></li>
+        <li><a href="#skills_page">Abilities</a></li>
+        <li><a href="#why_me_page">Why me?</a></li>
+        <li><a href="#contact_page">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
   <div class="page_title">
     Résumé
   </div>
 
   <div class="about_me">
-    Vitalijus is an experienced marketer with well developed skills and experience in digital marketing, digital project management and have worked in the industry since 2010. Vitalijus also a skilled web desiner who has supported many different projects over the years. He is determined and enthusiastic, have developed good planning & organisational skills, & confident working independently or as part of a team.
+    Vitalijus is an experienced marketer with well developed skills and experience in digital marketing, digital project management and have worked in the industry since 2010. Vitalijus also a skilled web designer who has supported many different projects over the years. He is determined and enthusiastic, have developed good planning & organisational skills, & confident working independently or as part of a team.
   </div>
 
   <div class="resume">
+    <div class="resume_heading">
+      Work experience
+    </div>
+
     <ul>
-      <li class="resume_title">Work experience</li>
-      <li class="resume_content">
+      <li class="empl">
         <div class="position_name">
           Digital Marketing Executive
         </div>
@@ -37,20 +74,19 @@
           AviaTrading
         </div>
 
-        <div class="work_description">
-          Vitalijus is responsible the for planning, development and execution of a range of digital marketing activities, to agreed budgets and timescales, reporting on outcomes and effectiveness. As well developing campaigns to drive site traffic, helping to improve site content and structure to provide better architecture and usability, whilst improving search engine optimisation.
-        </div>
-      </li>
-
-      <li class="resume_dates">
         2014 - present<br>
         Munich, Germany
+      </li>
+
+      <li class="resume_content">
+        <div class="work_description">
+          Vitalijus is responsible for the planning, development and execution of a range of digital marketing activities, to agreed budgets and timescales, reporting on outcomes and effectiveness. As well developing campaigns to drive site traffic, helping to improve site content and structure to provide better architecture and usability, whilst improving search engine optimisation.
+        </div>
       </li>
     </ul>
 
     <ul>
-      <li class="resume_title"></li>
-      <li class="resume_content">
+      <li class="empl">
         <div class="position_name">
           Digital Project Assistant
         </div>
@@ -59,20 +95,19 @@
           Bergx2 GmbH
         </div>
 
+        Oct. 2014 - Feb. 2015<br>
+        Munich, Germany
+      </li>
+
+      <li class="resume_content">
         <div class="work_description">
           At Bergx2, Vitalijus was responsible for the acceleration of digital projects, both on the organisation’s own web portals and those of new venture companies. He also worked with web development teams to ensure project plan is properly implemented.
         </div>
       </li>
-
-      <li class="resume_dates">
-        Oct. 2014 - Feb. 2015<br>
-        Munich, Germany
-      </li>
     </ul>
 
     <ul>
-      <li class="resume_title"></li>
-      <li class="resume_content">
+      <li class="empl">
         <div class="position_name">
           Project Management Office
         </div>
@@ -80,21 +115,19 @@
         <div class="company_name">
           Allianz AMOS
         </div>
+        2012 - 2013<br>
+        Munich, Germany
+      </li>
 
+      <li class="resume_content">
         <div class="work_description">
           Key responsibilities consisted of developing and maintaining the GloBI (Global Business Intelligence Platform) web page with the WIKI Content Management System, supporting the layout development with HTML and CSS, as well as facilitating managers and the project management office in GloBI maintenance. 
         </div>
       </li>
-
-      <li class="resume_dates">
-        2012 - 2013<br>
-        Munich, Germany
-      </li>
     </ul>
 
     <ul>
-      <li class="resume_title"></li>
-      <li class="resume_content">
+      <li class="empl">
         <div class="position_name">
           EVS Volunteer
         </div>
@@ -102,7 +135,11 @@
         <div class="company_name">
           LISEL asbl
         </div>
+        2010 - 2011<br>
+        Luxemburg city, Luxemburg
+      </li>
 
+      <li class="resume_content">
         <div class="work_description">
           EVS project's aim was to encourage in self-initiative, entrepreneurship and turn ideas into actions. During EVS Vitalijus have developed several projects:<br>
           - Promoted LISEL asbl and raised level of awareness through various media actions.<br>
@@ -112,16 +149,16 @@
           All this actions takes creativity, innovation, risk-taking, as well as the ability to plan and manage projects in order to achieve objectives.
         </div>
       </li>
-
-      <li class="resume_dates">
-        2010 - 2011<br>
-        Luxemburg city, Luxemburg
-      </li>
     </ul>
+  </div>
+
+  <div class="resume">
+    <div class="resume_heading">
+      Education
+    </div>
 
     <ul>
-      <li class="resume_title">Education</li>
-      <li class="resume_content">
+      <li class="empl">
         <div class="position_name">
           Technical University Munich
         </div>
@@ -129,21 +166,19 @@
         <div class="company_name">
           TUM School of Management, Master in Consumer Affairs
         </div>
-
+        2012 - 2014<br>
+        Munich, Germany
+      </li>
+      <li class="resume_content">
         <div class="work_description">
           Advanced studies in digital marketing, innovation management and technologies gave a
         unique view in developing consumer related ideas and concepts.
         </div>
       </li>
-      <li class="resume_dates">
-        2012 - 2014<br>
-        Munich, Germany
-      </li>
     </ul>
 
     <ul>
-      <li class="resume_title"></li>
-      <li class="resume_content">
+      <li class="empl">
         <div class="position_name">
           Lithuanian University of Educational Science
         </div>
@@ -151,14 +186,14 @@
         <div class="company_name">
           Bachelor in Sociology
         </div>
-        
+        2006 - 2010<br>
+        Vilnius, Lithuania
+      </li>
+
+      <li class="resume_content"> 
         <div class="work_description">
           Studies in empirical investigation have encouraged me to seek professional future in the area of market research.
         </div>
-      </li>
-      <li class="resume_dates">
-        2006 - 2010<br>
-        Vilnius, Lithuania
       </li>
     </ul>
   </div>
@@ -310,14 +345,3 @@
     </li>
   </ul>
 </section>
-
-
-
-<div id="screen">
-
-</div>
-
-<script>
-  if ( $(document).ready )
-    $("#screen").fadeOut(500);
-</script>
