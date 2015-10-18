@@ -16,12 +16,12 @@
 
 @font-face { 
   font-family: Gotham-Book; 
-  src: url('fonts/gotham-book.ttf'); 
+  src: font-url('fonts/gotham-book.ttf'); 
 } 
 
 @font-face { 
   font-family: Gotham-Medium; 
-  src: url('fonts/gotham-medium.ttf'); 
+  src: font-url('fonts/gotham-medium.ttf'); 
 } 
 
 /*----------*/
