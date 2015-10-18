@@ -12,20 +12,6 @@
  *= require_tree .
  */
 
-/* FONTS */
-
-@font-face { 
-  font-family: Gotham-Book; 
-  src: font-url('fonts/gotham-book.ttf'); 
-} 
-
-@font-face { 
-  font-family: Gotham-Medium; 
-  src: font-url('fonts/gotham-medium.ttf'); 
-} 
-
-/*----------*/
-
 body {
 	margin: 0px;
 	background-color: #F6F6F6;
