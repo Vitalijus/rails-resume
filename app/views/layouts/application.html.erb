@@ -28,30 +28,27 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 
 </head>
-	<body>
-		<div id="page_progress"></div>
-		<header>
-		    <div id="bottom_nav">
-		      <!--<%= render "counter" %>-->
+<body>
+<div id="page_progress"></div>
+	<header>
+	    <div id="bottom_nav">
+	      <ul>
+	        <li><a href="#home_page">Home</a></li>
+	        <li><a href="#resume_page">Résumé</a></li>
+	        <li><a href="#skills_page">Abilities</a></li>
+	        <li><a href="#why_me_page">Why me?</a></li>
+	        <li><a href="#contact_page">Contact</a></li>
+	      </ul>
+	    </div>
+	</header>
 
-		      <ul>
-		        <li><a href="#home_page">Home</a></li>
-		        <li><a href="#resume_page">Résumé</a></li>
-		        <li><a href="#skills_page">Abilities</a></li>
-		        <li><a href="#why_me_page">Why me?</a></li>
-		        <li><a href="#contact_page">Contact</a></li>
-		      </ul>
-		    </div>
-		</header>
+<%= yield %>
 
-		<%= yield %>
-
-		<div id="footer">
-			&copy;<%= Time.now.year %> - Handcrafted by Vitalijus Desukas<br>
-			<%= image_tag "signature.png", alt: "signature", width: 250 %>
-		</div>
-
-	</body>
+<div id="footer">
+	&copy;<%= Time.now.year %> - Handcrafted by Vitalijus Desukas<br>
+	<%= image_tag "signature.png", alt: "signature", width: 250 %>
+</div>
+</body>
 	<script src="assets/nanobar-master/nanobar.min.js"></script>
 	<script>
 		var options = {

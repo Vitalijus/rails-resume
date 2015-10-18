@@ -1,11 +1,8 @@
-<%= link_to profiles_create_path, remote: true do %>
-  <div id="outer_circle">
-	<div id="inner_circle">
-		
-    </div>
-  </div>
-
-	<div id="counter">
-		<%= @adverts %>
-	</div>
-<% end %>
+<div id="counter">
+	<%= @clicks %>
+	<% if  flash[:error] %>
+		<div id="error"></div>
+	<% elsif flash[:notice] %>
+		<div id="notice"></div>
+	<% end %>
+</div>

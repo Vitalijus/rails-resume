@@ -1,6 +1,4 @@
-<div class="landing_image">
-  
-</div>
+<div class="landing_image"></div>
 
 <!-- HOME PAGE -->
 <section id="home_page">
@@ -10,7 +8,6 @@
     </div>
 
     <div class="name_surname">
-      <!--<%= image_tag "name.png", alt: "name", width: 400 %>-->
       Vitalijus Dešukas
     </div>
 
@@ -39,8 +36,6 @@
   <header>
     <div id="nav-anchor"></div>
     <nav>
-      <!--<%= render "counter" %>-->
-
       <ul>
         <li><a href="#home_page">Home</a></li>
         <li><a href="#resume_page">Résumé</a></li>
@@ -48,6 +43,13 @@
         <li><a href="#why_me_page">Why me?</a></li>
         <li><a href="#contact_page">Contact</a></li>
       </ul>
+      
+      <div class="counter_box">
+        <%= render "counter" %>
+        <%= link_to '/profiles/create', remote: true do %>
+          Handshake
+        <% end %>
+      </div>
     </nav>
   </header>
 

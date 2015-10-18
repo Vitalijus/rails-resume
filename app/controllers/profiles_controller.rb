@@ -2,19 +2,21 @@ class ProfilesController < ApplicationController
   respond_to :html, :js
 
   def index
-  	@adverts = Profile.all.count
+  	@clicks = Profile.all.count
   end
 
   def create
   	@ip = request.remote_ip.to_s
   	
-  	if Profile.exists?(ip: "#{@ip}")
-  		redirect_to :back
-  	else
-	  	@profile = Profile.new(ip: "#{@ip}")
-	  	@profile.save
-	  	redirect_to :back
-	end
+	  @profile = Profile.new(ip: "#{@ip}")
+  	
+    if @profile.save
+      flash[:notice] = ""
+  	  redirect_to :back
+    else
+      flash[:error] = ""
+      redirect_to :back
+	  end
   end
 
   private

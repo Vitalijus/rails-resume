@@ -5,9 +5,9 @@ nav {
 	z-index: 999;
 	background-color: #fff;
 
-	-webkit-box-shadow: 0 0 5px 1px #f0f0f0;
-    -moz-box-shadow: 0 0 5px 1px #f0f0f0;
-    box-shadow: 0 0 5px 1px #d8d8d8;
+	-webkit-box-shadow: 0 0 5px 1px #e3e3e3;
+    -moz-box-shadow: 0 0 5px 1px #e3e3e3;
+    box-shadow: 0 0 5px 1px #e3e3e3;
 }
 
 nav ul {
@@ -15,6 +15,7 @@ nav ul {
 }
 
 nav li {
+	width: 100px;
 	padding: 20px;
 	font-family: 'PT Sans', sans-serif;
 	text-transform: uppercase;
@@ -25,7 +26,7 @@ nav li {
 
 nav.stick {
     position: fixed;
-    height: 280px;
+    height: 342px;
     top: 0;
     z-index: 10000;
     margin-top: 20px;
@@ -44,38 +45,31 @@ nav a.nav-active {
     color: #6599FF;
 }
 
-#outer_circle {
-	width: 25px;
-	height: 25px;
-	position: absolute;
-	top: 18px;
-	left: 40px;
-	border: 2px solid #394042;
-
-	-webkit-border-radius: 50px;
-	-moz-border-radius: 50px;
-	border-radius: 50px;
-}
-
-#inner_circle {
-	width: 15px;
-	height: 15px;
-	margin: 3px 0 0 3px;
-	display: none;
-	border: 2px solid #394042;
-
-	-webkit-border-radius: 50px;
-	-moz-border-radius: 50px;
-	border-radius: 50px;
-}
-
 #counter {
-	width: 20px;
-	height: 20px;
+	width: 100%;
 	font-size: 14px;
 	font-family: 'Lato', sans-serif;
 	font-weight: bold;
 }
+
+.counter_box {
+	width: 100%;
+	position: relative;
+	padding: 15px;
+	text-align: center;
+	font-family: 'PT Sans', sans-serif;
+	text-transform: uppercase;
+	font-size: 12px;
+}
+
+.counter_box a {
+	color: #434a4c;
+}
+
+.counter_box a:hover {
+	color: #6599FF;
+}
+
 
 /* BOTTOM NAV FOR MOBILE */
 
@@ -129,12 +123,12 @@ nav a.nav-active {
 }
 
 #home_page_content {
-	max-width: 500px;
+	max-width: 600px;
 	height: 450px;
 	position: absolute;
 	top: 50%;
 	left: 50%;
-	margin-left: -250px;
+	margin-left: -300px;
 	margin-top: -225px;
 	border: 0px solid red;
 }
@@ -170,31 +164,39 @@ nav a.nav-active {
 	color: #fff;
 	font-size: 80px;
 	font-family: 'Megrim', cursive;
+	text-shadow: 0px 0px 6px rgba(0,0,0,0.7);
 	border: 3px solid #fff;
 
 	-webkit-border-radius: 100px;
 	-moz-border-radius: 100px;
 	border-radius: 100px;
+
+	-webkit-box-shadow: 0 0 2px 1px #777;
+    -moz-box-shadow: 0 0 2px 1px #777;
+    box-shadow: 0 0 2px 1px #777;
 }
 
 .name_surname {
 	margin: auto;
 	color: #fff;
 	font-size: 45px;
-	font-family: 'Lato', sans-serif;
-	letter-spacing: 3px;
-	font-weight: 900;
+	font-family: 'Gotham-Medium';
+	letter-spacing: 2px;
+	font-weight: lighter;
 	text-transform: uppercase;
 	text-align: center;
+	text-shadow: 0px 0px 6px rgba(0,0,0,0.7);
 }
 
 .name_subheader {
 	margin: auto;
+	margin-top: 8px;
 	color: #fff;
-	font-size: 25px;
-	font-family: 'Open Sans', sans-serif;
+	font-size: 22px;
+	font-family: 'Gotham-Book';
 	text-transform: uppercase;
 	text-align: center;
+	text-shadow: 0px 0px 6px rgba(0,0,0,0.7);
 }
 
 .contact_button {
@@ -219,9 +221,9 @@ nav a.nav-active {
   	-ms-transition: box-shadow 150ms linear;
   	transition: box-shadow 150ms linear;
 
-  	-webkit-box-shadow: 0 0 5px 1px #f0f0f0;
-    -moz-box-shadow: 0 0 5px 1px #f0f0f0;
-    box-shadow: 0 0 5px 1px #f0f0f0;
+  	-webkit-box-shadow: 0 0 5px 1px #d8d8d8;
+    -moz-box-shadow: 0 0 5px 1px #d8d8d8;
+    box-shadow: 0 0 5px 1px #d8d8d8;
 }
 
 a .contact_button {
@@ -229,13 +231,13 @@ a .contact_button {
 }
 
 a:hover .contact_button {
-	-webkit-box-shadow: 0 0 5px 2px #f0f0f0;
-    -moz-box-shadow: 0 0 5px 2px #f0f0f0;
-    box-shadow: 0 0 5px 2px #f0f0f0;
+	-webkit-box-shadow: 0 0 5px 2px #d8d8d8;
+    -moz-box-shadow: 0 0 5px 2px #d8d8d8;
+    box-shadow: 0 0 5px 2px #d8d8d8;
 }
 
 #arrow_down {
-	width: 90px;
+	width: 100px;
 	height: 60px;
 	position: absolute;
 	bottom: 0;
@@ -254,15 +256,15 @@ a:hover .contact_button {
   	-ms-transition: box-shadow 150ms linear;
   	transition: box-shadow 150ms linear;
 
-  	-webkit-box-shadow: 0 0 5px 1px #f0f0f0;
-    -moz-box-shadow: 0 0 5px 1px #f0f0f0;
-    box-shadow: 0 0 5px 1px #f0f0f0;
+  	-webkit-box-shadow: 0 0 5px 1px #d8d8d8;
+    -moz-box-shadow: 0 0 5px 1px #d8d8d8;
+    box-shadow: 0 0 5px 1px #d8d8d8;
 }
 
 #arrow_down:hover {
-	-webkit-box-shadow: 0 0 5px 2px #f0f0f0;
-    -moz-box-shadow: 0 0 5px 2px #f0f0f0;
-    box-shadow: 0 0 5px 2px #f0f0f0;
+	-webkit-box-shadow: 0 0 5px 2px #d8d8d8;
+    -moz-box-shadow: 0 0 5px 2px #d8d8d8;
+    box-shadow: 0 0 5px 2px #d8d8d8;
 }
 
 #arrow_down img {
@@ -387,12 +389,12 @@ a:hover .contact_button {
 .for_hire_title {
 	width: 80%;
 	float: left;
-	padding: 8px 0 10px 0;
+	padding: 8px 15px 10px 0;
 	color: #fff;
 	text-align: center;
-	font-family: 'Lato', sans-serif;
-	font-weight: bold;
-	font-size: 22px;
+	font-family: 'Gotham-Book';
+	line-height: 30px;
+	font-size: 25px;
 }
 
 .contact_now_button {

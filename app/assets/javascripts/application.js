@@ -83,13 +83,6 @@ $(document).ready(function(){
 
 /*****************************/
 
-$(document).ready(function(){
-  $("#outer_circle").on("click", function() {
-    $("#inner_circle").fadeIn(300);
-  });
-});
-
-
 $(document).ready(function() {
     $(window).scroll( function(){
     
