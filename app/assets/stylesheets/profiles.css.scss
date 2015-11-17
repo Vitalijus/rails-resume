@@ -2,12 +2,12 @@
 
 @font-face { 
   font-family: 'Gotham-Book'; 
-  src: font-url('/assets/gotham-book.ttf'); 
+  src: font-url(asset-path('fonts/gotham-book.ttf'));
 } 
 
 @font-face { 
   font-family: 'Gotham-Medium'; 
-  src: font-url('/assets/gotham-medium.ttf'); 
+  src: font-url(asset-path('fonts/gotham-medium.ttf')); 
 } 
 
 /*----------*/
